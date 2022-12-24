@@ -59,25 +59,25 @@ DATABASES = {
 1. For Authentication app
 
 ```bash
-python manage.py test Authentication.tests.test_urls 
-python manage.py test Authentication.tests.test_views
+python manage.py test apps.Authentication.tests.test_urls 
+python manage.py test apps.Authentication.tests.test_views
 ```
 
 2. For Blogs app
 
 ```bash
-python manage.py test Blogs.tests.test_models
-python manage.py test Blogs.tests.test_urls
-python manage.py test Blogs.tests.test_views
+python manage.py test apps.Blogs.tests.test_models
+python manage.py test apps.Blogs.tests.test_urls
+python manage.py test apps.Blogs.tests.test_views
 ```
 
 3. For Users app
 
 ```bash
-python manage.py test Users.tests.test_managers
-python manage.py test Users.tests.test_models
-python manage.py test Users.tests.test_urls
-python manage.py test Users.tests.test_views
+python manage.py test apps.Users.tests.test_managers
+python manage.py test apps.Users.tests.test_models
+python manage.py test apps.Users.tests.test_urls
+python manage.py test apps.Users.tests.test_views
 ```
 
 ## Logging
