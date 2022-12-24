@@ -20,7 +20,8 @@ Next install Blogs-API-drf.
 ```bash
 git clone git@github.com:LianaSmile/Blogs-API-drf.git
 cd BlogsWebsiteBackend
-python3 or python -m venv venv
+python3 -m venv venv
+source venv/bin/activate
 pip install -r requirements/requirements.txt
 python manage.py makemigrations
 python manage.py migrate
