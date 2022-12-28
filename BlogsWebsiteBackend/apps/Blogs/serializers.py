@@ -74,8 +74,8 @@ class PostSerializer(serializers.HyperlinkedModelSerializer):
         for field in data:
             if "id" in field.keys():
                 logger.info('Updating an existing data!')
-                if model.objects.filter(id=field['id']).exists() and \
-                        field['id'] in fields_with_same_post_instance.values_list('id', flat=True):
+                if (model.objects.filter(id=field['id']).exists() and 
+                        field['id'] in fields_with_same_post_instance.values_list('id', flat=True)):
                     field_instance = model.objects.get(id=field['id'])
                     field_instance.name = field.get('name', field_instance.name)
                     field_instance.save()
