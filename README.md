@@ -9,7 +9,7 @@ The application is run along with git@github.com:LianaSmile/Blogs-API-drf.git.
 First install the application NOTIFIER and run it.
 
 ```bash
-git clone git@github.com:LianaSmile/NOTIFIER.git
+git clone https://github.com/lianakalpakchyan/NOTIFIER.git
 cd NOTIFIER
 docker build --tag notifier .
 docker run -p 127.0.0.1:80:8080/tcp notifier
@@ -18,7 +18,7 @@ docker run -p 127.0.0.1:80:8080/tcp notifier
 Next install Blogs-API-drf.
 
 ```bash
-git clone git@github.com:LianaSmile/Blogs-API-drf.git
+git clone https://github.com/lianakalpakchyan/Blogs-API-drf.git
 cd BlogsWebsiteBackend
 python3 -m venv venv
 source venv/bin/activate
